@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/header :: header}">
+    <title>注册成功</title>
+</head>
+<body>
+
+<div class="container" style="height: 500px" >
+<div class="col-xs-6 col-md-4"></div>
+    <br/><h2 >注册成功！</h2><br/>
+
+    页面将在<span id="num">5</span>秒后自动跳转至登录界面！<br/>
+
+    <br/><button type="submit" id="btn_test" class="btn btn-primary">立即登录</button><br/>
+
+</div>
+
+<div th:replace="~{fragments/footer :: footer}">...</div>
+
+<script src="../../js/auto_jump.js" th:src="@{/js/auto_jump.js}"></script>
+</body>
+</html>
